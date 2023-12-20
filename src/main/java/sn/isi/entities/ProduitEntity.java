@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import jakarta.persistence.*;
 
 @Entity
-@Data
+@Data //Getters & Setters
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProduitEntity {
