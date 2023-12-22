@@ -10,9 +10,10 @@ import sn.isi.exception.EntityNotFoundException;
 import sn.isi.exception.RequestException;
 import sn.isi.mapping.AppRolesMapper;
 
+
 import java.util.List;
 import java.util.Locale;
-import java.util.stream.Collectors;
+
 import java.util.stream.StreamSupport;
 
 
@@ -33,7 +34,7 @@ public class AppRolesService {
     public List<AppRoles>  getAppRoles() {
         return StreamSupport.stream(iAppRolesRepository.findAll().spliterator(), false)
                 .map(appRolesMapper::toAppRoles)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     @Transactional(readOnly = true)

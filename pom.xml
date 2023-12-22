@@ -63,6 +63,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- pour les tests d'integration -->
+		<dependency>
+			<groupId>org.springframework.restdocs</groupId>
+			<artifactId>spring-restdocs-mockmvc</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		<!-- Test container  -->
 		<dependency>
 			<groupId>org.testcontainers</groupId>
